@@ -1,4 +1,4 @@
-window.function = async function(urlPdf, checkIdpdf) {
+window.function = async function(urlPdf, checkIDpdf) {
   urlPdf = urlPdf.value ?? "";
   checkIDpdf = checkIDpdf.value ?? "";
   
