@@ -1,0 +1,33 @@
+[
+  {
+    "kind": "column",
+    "name": "HTTP POST Request Chat PDF",
+    "description": "Communiquer directement avec l'API Chat PDF afin d'ajouter des documents PDF et d'envoyer des messages",
+    "author": "Saliou <saliou.sarr94@gmail.com>",
+    "params": [
+      {
+        "name": "sourceId",
+        "displayName": "SourceID PDF",
+        "type": "string"
+      },
+      {
+        "name": "content",
+        "displayName": "Content Message",
+        "type": "string"
+      },
+      {
+        "name": "checkRep",
+        "displayName": "Check Réponse",
+        "type": "string"
+      },
+      {
+        "name": "role",
+        "displayName": "Role",
+        "type": "string"
+      }
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
