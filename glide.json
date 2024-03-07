@@ -6,12 +6,12 @@
     "author": "Saliou <saliou.sarr94@gmail.com>",
     "params": [
       {
-        "name": "urlPdf",
+        "name": "urlpdf",
         "displayName": "Url PDF",
         "type": "string"
       },
       {
-        "name": "checkIDpdf",
+        "name": "checkidpdf",
         "displayName": "Check ID PDF",
         "type": "string"
       }
