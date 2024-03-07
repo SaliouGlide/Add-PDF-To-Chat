@@ -8,7 +8,7 @@ window.function = async function(src, ctnt, checkRep, role) {
   if (checkRep === "" && role === "user") {
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
-      xhr.open('POST', 'https://api.chatpdf.com/v1/chats/message');
+      xhr.open('POST', 'https://api.chatpdf.com/v1/sources/add-url');
       xhr.setRequestHeader('x-api-key', 'sec_orx66UDiflDtBdPUsKtpfb1IDebY9aS3');
       xhr.setRequestHeader('Content-Type', 'application/json');
       xhr.onload = function () {
@@ -25,11 +25,7 @@ window.function = async function(src, ctnt, checkRep, role) {
         reject(new Error('Erreur réseau lors de la requête'));
       };
       const data = JSON.stringify({
-        sourceId: src,
-        messages: [{
-          role: 'user',
-          content: ctnt
-        }]
+        url: urlPdf,
       });
       xhr.send(data);
     });
