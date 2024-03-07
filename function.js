@@ -1,9 +1,9 @@
-window.function = async function(urlPdf, checkIDpdf) {
+window.function = async function(urlPdf, checkIdpdf) {
   urlPdf = urlPdf.value ?? "";
   checkIDpdf = checkIDpdf.value ?? "";
   
   // Vérifier si la colonne Réponse est vide et si le rôle est 'user'
-  if (checkIDpdfp === "") {
+  if (checkIDpdf === "") {
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
       xhr.open('POST', 'https://api.chatpdf.com/v1/sources/add-url');
