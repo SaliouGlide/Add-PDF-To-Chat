@@ -6,23 +6,13 @@
     "author": "Saliou <saliou.sarr94@gmail.com>",
     "params": [
       {
-        "name": "sourceId",
-        "displayName": "SourceID PDF",
+        "name": "urlPdf",
+        "displayName": "Url PDF",
         "type": "string"
       },
       {
-        "name": "content",
-        "displayName": "Content Message",
-        "type": "string"
-      },
-      {
-        "name": "checkRep",
-        "displayName": "Check Réponse",
-        "type": "string"
-      },
-      {
-        "name": "role",
-        "displayName": "Role",
+        "name": "checkIDpdf",
+        "displayName": "Check ID PDF",
         "type": "string"
       }
     ],
