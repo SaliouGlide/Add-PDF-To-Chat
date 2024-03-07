@@ -1,11 +1,9 @@
-window.function = async function(src, ctnt, checkRep, role) {
-  src = src.value ?? "";
-  ctnt = ctnt.value ?? "";
-  checkRep = checkRep.value ?? "";
-  role = role.value ?? "";
+window.function = async function(urlPdf, checkIDpdf) {
+  urlPdf = urlPdf.value ?? "";
+  checkIDpdf = checkIDpdf.value ?? "";
   
   // Vérifier si la colonne Réponse est vide et si le rôle est 'user'
-  if (checkRep === "" && role === "user") {
+  if (checkIDpdfp === "") {
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
       xhr.open('POST', 'https://api.chatpdf.com/v1/sources/add-url');
@@ -30,8 +28,8 @@ window.function = async function(src, ctnt, checkRep, role) {
       xhr.send(data);
     });
   } else {
-    // Colonne réponse non vide ou rôle différent de 'user', renvoyer une réponse déjà envoyée
-    return 'Réponse déjà envoyée';
+    // Colonne ID pdf non vide, renvoyer une réponse déjà envoyée
+    return 'ID pdf déjà envoyé';
     return new Promise((resolve, reject) => {
       reject(new Error('Réponse déjà envoyée'));
     });
